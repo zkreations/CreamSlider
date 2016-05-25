@@ -20,7 +20,7 @@
 =>Algunas estilos para comenzar
 */
 .cream-slider > input {display: none;}
-.cream-slider img {height: 100%;vertical-align: top;max-width: none;background: none;padding: 0;margin: 0;border: 0;    border-radius: 0;}
+.cream-slider img {height: 100%;display: block;max-width: none;background: none;padding: 0;margin: 0;border: 0;    border-radius: 0;}
 /*transition*/
 .cream-slider ul > li.tab {
    -moz-transition: flex .6s cubic-bezier(0.54, 0, 0.1, 1);
