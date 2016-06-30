@@ -3,6 +3,12 @@
 [Demostración](http://zkreations.github.io/CreamSlider/)
 Basado en [Sheet Slider](https://github.com/zkreations/SheetSlider)
 
+## Version 
+
+### Cream Slider 1.01
+
+* Reset en el css para evitar la sobreescritura
+
 ## Instalación
 
 [Descargar](https://github.com/zkreations/CreamSlider/archive/master.zip) e incluir arriba de `</head>` el codigo css.
