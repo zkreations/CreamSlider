@@ -1,4 +1,4 @@
-/*! Cream Slider 1.00 | Daniel Abel - http://zkreations.com | Free to use under terms of MIT license */
+/*! Cream Slider 1.01 | Daniel Abel - http://zkreations.com | Free to use under terms of MIT license */
 .cream-slider {
     font-size: 14px;
     line-height: 1.5;
@@ -20,7 +20,9 @@
 =>Algunas estilos para comenzar
 */
 .cream-slider > input {display: none;}
-.cream-slider img {height: 100%;display: block;max-width: none;background: none;padding: 0;margin: 0;border: 0;    border-radius: 0;}
+.cream-slider > ul > li.tab > img {height: 100%;display: block;max-width: none;background: none;padding: 0;margin: 0;border: 0;border-radius: 0;}
+.cream-slider > ul > li.tab {padding: 0;margin: 0;list-style-type: none;}
+.cream-slider > ul {padding: 0;margin: 0;list-style-type: none;}
 /*transition*/
 .cream-slider ul > li.tab {
    -moz-transition: flex .6s cubic-bezier(0.54, 0, 0.1, 1);
@@ -39,7 +41,7 @@ li.tab > div {
 /*
 =>Ahora si, lo que nos interesa
 */
-.cream-slider ul {
+.cream-slider > ul {
     overflow: hidden; 
     position: relative;
     height: 420px;
@@ -58,7 +60,7 @@ li.tab > div {
             align-items: flex-start;
 }
 /*Estilos para cada slide*/
-.cream-slider ul > li.tab {
+.cream-slider > ul > li.tab {
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -72,7 +74,7 @@ li.tab > div {
             flex-grow: 1;
 }
 /*para textos*/
-.cream-slider ul > li.tab > div {
+.cream-slider > ul > li.tab > div {
     left: 0;
     bottom: -1em;
     position: absolute;
@@ -81,9 +83,9 @@ li.tab > div {
     opacity: 0;
     white-space: nowrap;
 }
-.cream-slider li.tab > div a {color: #00BCD4;font-weight: 400;text-decoration: none;}
-.cream-slider li.tab > div a:hover {color: #80DEEA;text-decoration: none;}
-.cream-slider li.tab > div h3 {
+.cream-slider > ul > li.tab > div a {color: #00BCD4;font-weight: 400;text-decoration: none;}
+.cream-slider > ul > li.tab > div a:hover {color: #80DEEA;text-decoration: none;}
+.cream-slider > ul > li.tab > div h3 {
     font-size: 1.8em;
     margin: 0;
     padding: 0.25em 0.6em 0.2em;
@@ -97,7 +99,7 @@ li.tab > div {
     padding: 0.7em 1em;
     background: rgba(0,0,0,0.5);
 }
-.cream-slider li.tab > div h3, .cream-slider li.tab > div span {float: left;clear: both;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);}
+.cream-slider ul > li.tab > div h3, .cream-slider li.tab > div span {float: left;clear: both;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);}
 /*y para el label*/
 .cream-slider ul > li.tab > label {
     cursor: pointer;
@@ -151,13 +153,13 @@ li.tab > div {
     transition: opacity .7s ease .5s, bottom .7s ease .5s;
 }
 @media only screen and (max-width: 840px) {
-.cream-slider ul {height: 350px;}
+.cream-slider > ul {height: 350px;}
 }
 @media only screen and (max-width: 730px) {
 .cream-slider {font-size: 13px;}
-.cream-slider ul {height: 280px;}
+.cream-slider > ul {height: 280px;}
 }
 @media only screen and (max-width: 620px) {
-.cream-slider li.tab > div {display: none;}
-.cream-slider ul {height: 240px;}
+.cream-slider > ul > li.tab > div {display: none;}
+.cream-slider > ul {height: 240px;}
 }
